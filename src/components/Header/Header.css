@@ -1,0 +1,56 @@
+header {
+    --header-fg: rgb(255, 255, 255);
+    color: var(--header-fg);
+    display: flex;
+    position: sticky;
+    background-color: var(--primary-color);
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header-logo {
+    margin: auto 0;
+    padding: 0 20px;
+}
+
+.header-logo svg{
+    height: 40px;
+    width: auto;
+    fill: var(--header-fg);
+}
+
+.header-logo path {
+  fill: transparent;
+  stroke: var(--header-fg);
+  transition: 2s;
+  animation: logo-appear 2s ease forwards;
+}
+
+.nav-bar {
+    margin-left: auto;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+.nav-bar a:not(:last-child)::after {
+    content: "|";
+    padding: 0 10px;
+}
+
+@keyframes logo-appear {
+    70% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: var(--header-fg);
+        stroke-dashoffset: 0;
+    }
+}
