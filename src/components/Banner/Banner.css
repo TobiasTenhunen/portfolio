@@ -1,0 +1,28 @@
+.banner {
+    padding: 20vh clamp(2rem, 5vw, 4rem);
+    text-align: center;
+    font-size: clamp(2em, 4vw, 4rem);
+}
+
+.banner p {
+    text-align: center;
+    font-size: 0.5em;
+    opacity: 0.8;
+}
+
+.heading {
+    transform: scale(0) skewY(10deg);
+    filter: blur(5px);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: var(--primary-color);
+    transition: 1s;
+}
+
+h1.active {
+    filter: blur(0px);
+    transform: scale(1);
+}
