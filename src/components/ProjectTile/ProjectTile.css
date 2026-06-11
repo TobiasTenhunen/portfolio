@@ -1,5 +1,6 @@
 .project-tile {
     text-align: center;
+    user-select: none;
 }
 
 .project-tile img {
