@@ -26,12 +26,9 @@ export default function Header() {
             </Link>
             <nav className="nav-bar">
             <ul>
-                <a href="/projecten">
-                Projecten
-                </a>
-                <a>
-                Projecten
-                </a>
+                <li>
+                    <Link to={"/projecten"}>Projecten</Link>
+                </li>
             </ul>
             </nav>
         </header>

@@ -36,6 +36,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    list-style: none;
     padding: 20px;
     background-color: var(--primary-color);
 }
