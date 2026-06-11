@@ -10,7 +10,7 @@ export default function Banner({text, children}: Props) {
     const [active, setActive] = useState(false)
     useEffect(() => {
         setActive(true)
-    })
+    }, [])
     
     return (
             <section className="banner">
