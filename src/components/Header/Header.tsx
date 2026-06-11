@@ -25,11 +25,11 @@ export default function Header() {
                 </div>
             </Link>
             <nav className="nav-bar">
-            <ul>
-                <li>
-                    <Link to={"/projecten"}>Projecten</Link>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <Link to={"/projecten"}>Projecten</Link>
+                    </li>
+                </ul>
             </nav>
         </header>
     )
