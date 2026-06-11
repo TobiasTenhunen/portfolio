@@ -13,7 +13,7 @@ export default function Header() {
 
         path.style.strokeDasharray = length.toString()
         path.style.strokeDashoffset = length.toString()
-    })
+    }, [])
 
     return (
         <header>
