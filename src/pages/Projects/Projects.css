@@ -1,0 +1,12 @@
+.web-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 100px;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    .web-projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

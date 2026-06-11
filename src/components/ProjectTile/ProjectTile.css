@@ -5,10 +5,10 @@
 .project-tile img {
     border: 2px solid var(--primary-color);
     border-radius: 20px;
-    margin: 40px 0;
+    margin: 20px 0;
     filter: grayscale(1);
     transition: 0.4s;
-    width: 60%;
+    width: 80%;
 }
 
 .project-tile img:hover {
