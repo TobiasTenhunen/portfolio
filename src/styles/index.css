@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    min-height: 100vh;
+    min-height: 100vh; /*So the footer won't float on the page*/
 }
 
 a {
