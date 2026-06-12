@@ -11,7 +11,12 @@ export default function ProjectTile({projectName, imageUrl, description, project
     return (
         <div className="project-tile">
             <h3>{projectName}</h3>
-            <a href={projectUrl} target="_blank"><img src={imageUrl} alt={projectName}></img></a>
+            <div className="visual-showcase">
+                <a className="img-anchor" href={projectUrl} target="_blank">
+                    <img src={imageUrl} alt={projectName} />
+                    <button className="view-project">Bekijk &#8599;</button>
+                </a>
+            </div>
             <p>{description}</p>
         </div>
     )
