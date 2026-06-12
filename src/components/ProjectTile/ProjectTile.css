@@ -7,14 +7,13 @@
     border: 2px solid var(--primary-color);
     border-radius: 20px;
     margin: 20px 0;
-    filter: grayscale(1);
-    transition: 0.4s;
-    width: 80%;
+    transition: 0.2s;
+    width: 100%;
+    height: auto;
 }
 
 .project-tile img:hover {
-    filter: grayscale(0);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .project-tile h3 {
