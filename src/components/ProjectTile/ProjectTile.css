@@ -3,6 +3,22 @@
     user-select: none;
 }
 
+.img-anchor {
+    position: relative;
+}
+
+.view-project {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--fg);
+    right: 10%;
+    bottom: 40px;
+}
+
 .project-tile img {
     border: 2px solid var(--primary-color);
     border-radius: 20px;
@@ -12,7 +28,19 @@
     height: auto;
 }
 
-.project-tile img:hover {
+.visual-showcase {
+    transition: 0.2s;
+}
+
+.visual-showcase:hover {
+    transform: scale(1.05);
+}
+
+.view-project {
+    transition: 0.2s;
+}
+
+.visual-showcase .view-project:hover {
     transform: scale(1.05);
 }
 
