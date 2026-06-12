@@ -14,11 +14,13 @@ export default function Projects() {
                 <ProjectTile
                     projectName="Bakkie Bewust"
                     imageUrl={bakkieBewust}
+                    projectUrl="https://bakkiebewust.tobiastenhunen.com"
                     description="Een fictief bedrijf voor duurzame koffie."
                 />
                 <ProjectTile
                     projectName="Bauhaus Parallax Effect"
                     imageUrl={bauhaus}
+                    projectUrl="https://bauhaus.tobiastenhunen.com"
                     description="Een school opdracht waarbij we een site moesten maken met een parallax effect."
                 />
             </section>
