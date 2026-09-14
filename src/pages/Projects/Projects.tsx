@@ -5,6 +5,7 @@ import "./Projects.css"
 // Project images
 import bakkieBewust from "../../assets/project-showcases/bakkie-bewust.webp"
 import bauhaus from "../../assets/project-showcases/bauhaus.webp"
+import nature from "../../assets/project-showcases/nature.webp"
 
 export default function Projects() {
     return (
@@ -22,6 +23,12 @@ export default function Projects() {
                     imageUrl={bauhaus}
                     projectUrl="https://bauhaus.tobiastenhunen.com"
                     description="Een school opdracht waarbij we een site moesten maken met een parallax effect."
+                />
+                <ProjectTile
+                    projectName="Natuur"
+                    imageUrl={nature}
+                    projectUrl="https://nature.tobiastenhunen.com"
+                    description="Een simpele site over natuur."
                 />
             </section>
         </>
