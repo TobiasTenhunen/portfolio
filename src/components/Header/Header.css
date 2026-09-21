@@ -41,9 +41,12 @@ header {
     background-color: var(--primary-color);
 }
 
-.nav-bar a:not(:last-child)::after {
-    content: "|";
-    padding: 0 10px;
+.nav-bar a {
+    margin-left: 10px;
+}
+
+#contact {
+    padding: 20px;
 }
 
 @keyframes logo-appear {

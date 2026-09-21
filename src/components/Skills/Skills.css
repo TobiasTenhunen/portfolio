@@ -1,0 +1,24 @@
+.skills {
+    --icon-size: 60px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.skills-icons * {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+@media (max-width: 500px) {
+    .skills-icons {
+    }
+}
