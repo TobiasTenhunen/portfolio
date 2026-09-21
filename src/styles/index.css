@@ -2,12 +2,14 @@
 
 :root {
     font-size: clamp(14px, 1.2vw, 18px);
+    --h2-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *::selection {
@@ -26,6 +28,10 @@ body, button {
 
 main {
     min-height: 100vh; /*So the footer won't float on the page*/
+}
+
+h2 {
+    font-size: var(--h2-size);
 }
 
 a {
