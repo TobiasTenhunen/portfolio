@@ -27,7 +27,7 @@ export default function Header() {
             <nav className="nav-bar">
                 <ul>
                     <li>
-                        <Link to={"/mijnwerk"}>Mijn werk</Link>
+                        <Link to={"/mijn-werk"}>Mijn werk</Link>
                     </li>
                     <li>
                         <a id="contact" href="#footer">Contact</a>

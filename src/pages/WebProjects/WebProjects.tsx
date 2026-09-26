@@ -1,16 +1,16 @@
 import Banner from "../../components/Banner/Banner";
 import ProjectTile from "../../components/ProjectTile/ProjectTile";
-import "./Projects.css"
+import "./WebProjects.css"
 
 // Project images
 import bakkieBewust from "../../assets/project-showcases/bakkie-bewust.webp"
 import bauhaus from "../../assets/project-showcases/bauhaus.webp"
 import nature from "../../assets/project-showcases/nature.webp"
 
-export default function Projects() {
+export default function WebProjects() {
     return (
         <>
-            <Banner text="Projecten" />
+            <Banner text="Websites" />
             <section className="web-projects">
                 <ProjectTile
                     projectName="Bakkie Bewust"
