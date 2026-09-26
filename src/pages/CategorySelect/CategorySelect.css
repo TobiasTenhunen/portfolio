@@ -14,14 +14,15 @@
     align-items: center;
     user-select: none;
     -webkit-user-drag: none;
-    transform: scale(0);
+    transform: translateY(20px);
     flex: 1;
-    transition: 0.5s;
-    transition: flex 0.5s cubic-bezier(0.25, 1.5, 0.35, 1);
+    transition:
+        flex 0.5s cubic-bezier(0.25, 1.5, 0.35, 1),
+        transform 0.4s;
 }
 
 .choice-button.active {
-    transform: scale(1);
+    transform: translateY(0px);
 }
 
 .choice-button:hover {
@@ -34,12 +35,12 @@
 
 .choice-design {
     color: var(--design-primary);
-    border:20px solid var(--design-primary);
+    border: 20px solid var(--design-primary);
 }
 
 .choice-web {
     color: var(--web-primary);
-    border:20px solid var(--web-primary);
+    border: 20px solid var(--web-primary);
 }
 
 @media (max-width: 1000px) {
