@@ -1,0 +1,40 @@
+.category-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    height: calc(100vh - var(--header-height));
+    width: 100%;
+    color: var(--fg);
+}
+
+.choice-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.choice-button:hover {
+    flex: 2;
+}
+
+.choice-button span {
+    font-size: 50px;
+}
+
+.choice-design {
+    background-color: var(--design-primary);
+}
+
+.choice-web {
+    background-color: var(--web-primary);
+}
+
+@media (max-width: 500px) {
+    .category-buttons {
+        flex-direction: column;
+    }
+}

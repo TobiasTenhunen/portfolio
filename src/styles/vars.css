@@ -1,5 +1,26 @@
+@property --primary-color {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: #42392d;
+}
+
 :root {
-    --primary-color: #42392d;
+    --web-primary: #00304d;
+    --design-primary: #e68e21;
     --bg: #f5f5f5;
     --fg: white;
+    --h2-size: clamp(1.5rem, 3vw, 2rem);
+    --header-height: 60px;
+}
+
+body {
+    transition: --primary-color 0.2s ease;
+}
+
+[data-route="web"] {
+    --primary-color: var(--web-primary);
+}
+
+[data-route="design"] {
+    --primary-color: var(--design-primary);
 }
