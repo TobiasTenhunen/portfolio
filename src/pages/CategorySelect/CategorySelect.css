@@ -14,8 +14,14 @@
     align-items: center;
     user-select: none;
     -webkit-user-drag: none;
+    transform: scale(0);
     flex: 1;
     transition: 0.5s;
+    transition: flex 0.5s cubic-bezier(0.25, 1.5, 0.35, 1);
+}
+
+.choice-button.active {
+    transform: scale(1);
 }
 
 .choice-button:hover {
