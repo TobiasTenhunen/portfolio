@@ -2,17 +2,19 @@ header {
     --header-fg: rgb(255, 255, 255);
     color: var(--header-fg);
     display: flex;
+    align-items: center;
     position: sticky;
     background-color: var(--primary-color);
     top: 0;
     width: 100%;
+    height: var(--header-height);
     z-index: 2;
     font-size: 1rem;
 }
 
 .header-logo {
     margin: auto 0;
-    padding: 0 20px;
+    margin-left: 20px;
 }
 
 .header-logo svg{
@@ -37,16 +39,12 @@ header {
     flex-direction: row;
     align-items: flex-end;
     list-style: none;
-    padding: 20px;
+    margin: 0 20px;
     background-color: var(--primary-color);
 }
 
 .nav-bar a {
     margin-left: 10px;
-}
-
-#contact {
-    padding: 20px;
 }
 
 @keyframes logo-appear {
