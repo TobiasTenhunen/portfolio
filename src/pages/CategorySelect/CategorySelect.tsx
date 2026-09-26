@@ -7,7 +7,7 @@ export default function CategorySelect() {
             <Link className="choice-web choice-button" to={"/web-projecten"}>
                 <span>Web</span>
             </Link>
-            <Link className="choice-design choice-button" to={"/design-projects"}>
+            <Link className="choice-design choice-button" to={"/design-projecten"}>
                 <span>Design</span>
             </Link>
         </section>
