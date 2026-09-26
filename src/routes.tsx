@@ -4,7 +4,6 @@ import CategorySelect from "./pages/CategorySelect/CategorySelect"
 import Projects from "./pages/Projects/Projects"
 import Layout from "./layouts/Layout"
 import PageNotFound from "./pages/PageNotFound/PageNotFound"
-import { useEffect } from "react"
 
 const routers = createBrowserRouter([
     {
