@@ -27,7 +27,7 @@ header {
   fill: transparent;
   stroke: var(--header-fg);
   transition: 2s;
-  animation: logo-appear 2s ease forwards;
+  animation: logo-appear 3s ease forwards;
 }
 
 .nav-bar {
@@ -50,10 +50,11 @@ header {
 @keyframes logo-appear {
     70% {
         fill: transparent;
+        stroke-dashoffset: 0;
     }
 
     100% {
-        fill: var(--header-fg);
         stroke-dashoffset: 0;
+        fill: var(--header-fg);
     }
 }
