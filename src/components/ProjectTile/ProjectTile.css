@@ -14,7 +14,7 @@
     border-radius: 20px;
     padding: 10px 20px;
     background-color: var(--primary-color);
-    color: var(--fg);
+    color: var(--bg);
     right: 10%;
     bottom: 40px;
 }
