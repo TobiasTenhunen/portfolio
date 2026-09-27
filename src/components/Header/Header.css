@@ -48,6 +48,11 @@ header {
     margin-left: 10px;
 }
 
+#contact {
+    border: 2px solid var(--bg);
+    padding: 10px;
+}
+
 @keyframes logo-appear {
     70% {
         fill: transparent;
