@@ -14,7 +14,7 @@ export default function Banner({text, verticalMargin = "", children}: Props) {
     useEffect(() => {
         setActive(true)
         if (verticalMargin && sectionRef.current) {
-            sectionRef.current.style.margin = `${verticalMargin}em 0`
+            sectionRef.current.style.margin = `${verticalMargin} 0`
         }
 
     }, [])
