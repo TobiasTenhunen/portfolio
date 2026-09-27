@@ -7,7 +7,7 @@ type Props = {
     children?: React.ReactNode,
 }
 
-export default function Banner({text, verticalMargin = "6em", children}: Props) {
+export default function Banner({text, verticalMargin = "4em", children}: Props) {
     let sectionRef = useRef<HTMLElement>(null);
     const [active, setActive] = useState(false)
 
