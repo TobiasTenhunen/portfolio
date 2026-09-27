@@ -51,6 +51,14 @@ header {
 #contact {
     border: 2px solid var(--bg);
     padding: 10px;
+    background: linear-gradient(45deg, transparent 40%,rgba(255, 255, 255, 0.637) 50%, transparent 60%);
+    background-size: 700% 700%;
+    background-position: 0% 0%;
+    transition: 0.5s;
+}
+
+#contact:hover {
+    background-position: 100% 100%;
 }
 
 @keyframes logo-appear {
