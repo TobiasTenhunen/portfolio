@@ -1,19 +1,26 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import "./Banner.css"
 
 type Props = {
     text: string,
-    children?: React.ReactNode
+    verticalMargin?: String,
+    children?: React.ReactNode,
 }
 
-export default function Banner({text, children}: Props) {
+export default function Banner({text, verticalMargin = "", children}: Props) {
+    let sectionRef = useRef<HTMLElement>(null);
     const [active, setActive] = useState(false)
+
     useEffect(() => {
         setActive(true)
+        if (verticalMargin && sectionRef.current) {
+            sectionRef.current.style.margin = `${verticalMargin}em 0`
+        }
+
     }, [])
-    
+
     return (
-            <section className="banner">
+            <section ref={sectionRef} className="banner">
                 <h1 className={active ? "heading active" : "heading"}>{text}</h1>
                 {children}
             </section>
