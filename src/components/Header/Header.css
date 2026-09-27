@@ -39,6 +39,7 @@ header {
     flex-direction: row;
     align-items: flex-end;
     list-style: none;
+    gap: min(20px, 1vw);
     margin: 0 20px;
     background-color: var(--primary-color);
 }
