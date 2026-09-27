@@ -10,7 +10,7 @@ import nature from "../../assets/project-showcases/nature.webp"
 export default function WebProjects() {
     return (
         <>
-            <Banner text="Websites" />
+            <Banner text="Mijn Websites" />
             <section className="web-projects">
                 <ProjectTile
                     projectName="Bakkie Bewust"
