@@ -1,5 +1,4 @@
 .banner {
-    margin: 6em clamp(2rem, 5vw, 4rem);
     text-align: center;
     font-size: clamp(2em, 4vw, 4rem);
 }

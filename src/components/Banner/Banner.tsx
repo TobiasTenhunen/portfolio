@@ -7,14 +7,14 @@ type Props = {
     children?: React.ReactNode,
 }
 
-export default function Banner({text, verticalMargin = "", children}: Props) {
+export default function Banner({text, verticalMargin = "6em", children}: Props) {
     let sectionRef = useRef<HTMLElement>(null);
     const [active, setActive] = useState(false)
 
     useEffect(() => {
         setActive(true)
         if (verticalMargin && sectionRef.current) {
-            sectionRef.current.style.margin = `${verticalMargin} 0`
+            sectionRef.current.style.margin = `${verticalMargin} clamp(2rem, 5vw, 4rem)`
         }
 
     }, [])
