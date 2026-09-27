@@ -1,0 +1,12 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10em;
+}
+
+.greeting-message {
+    text-align: center;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}

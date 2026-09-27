@@ -5,11 +5,31 @@ import "./Home.css"
 export default function Home() {
     return (
         <>
-            <Banner text="Tobias Tenhunen">
-                <p>Front-End Developer</p>
-            </Banner>
+            <div className="hero">
+                <p className="greeting-message">{_getGreetingMessage()}, ik ben</p>
+                <Banner text="Tobias Tenhunen" verticalMargin="0.5em">
+                    <p>Front-End Developer</p>
+                </Banner>
+            </div>
             <Skills>
             </Skills>
         </>
     )
+}
+
+function _getGreetingMessage(): String {
+    let date = new Date()
+    let currentTime: String = date.toLocaleTimeString("nl", {hour12: false})
+    let currentHour = Number(currentTime.split(":")[0])
+
+    if (isNaN(currentHour)) {
+        console.warn("Couldn't retrieve current hour: ", currentHour)
+        return ""
+    }
+
+    if (currentHour < 6) return "Goedenacht"
+    if (currentHour < 12) return "Goedemorgen"
+    if (currentHour < 18) return "Goedemiddag"
+ 
+    return "Goedeavond"
 }
