@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Banner from "../../components/Banner/Banner"
 import Skills from "../../components/Skills/Skills"
 import "./Home.css"
@@ -10,6 +11,7 @@ export default function Home() {
                 <Banner text="Tobias Tenhunen" verticalMargin="0.5em">
                     <p>Front-End Developer</p>
                 </Banner>
+                <Link to="/mijn-werk" className="view-work">Bekijk mijn werk</Link>
             </div>
             <Skills>
             </Skills>

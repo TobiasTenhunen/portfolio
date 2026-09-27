@@ -5,6 +5,21 @@
     margin: 10em;
 }
 
+.view-work {
+    border: 8px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: max(20px, calc(40px + (1vw * -1)));
+    text-align: center;
+    margin-top: 1em;
+    font-weight: 600;
+    transition: 0.5s
+}
+
+.view-work:hover {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .greeting-message {
     text-align: center;
     font-size: 1.4rem;
