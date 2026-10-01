@@ -1,5 +1,10 @@
 @import "./vars.css";
 
+@font-face {
+    font-family: "Tenhunen";
+    src: url("../assets/fonts/Tenhunen-Black.woff2");
+}
+
 :root {
     font-size: clamp(14px, 1.2vw, 18px);
 }
