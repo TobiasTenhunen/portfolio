@@ -38,7 +38,8 @@ h2 {
     font-size: var(--h2-size);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
+    font-family: "Tenhunen";
     color: var(--primary-color);
 }
 
