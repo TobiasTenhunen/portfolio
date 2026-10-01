@@ -12,7 +12,6 @@
 .heading {
     opacity: 0;
     transform: translateY(5px);
-    font-family: "Oxanium", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
