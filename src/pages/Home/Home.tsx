@@ -29,9 +29,8 @@ function _getGreetingMessage(): String {
         return ""
     }
 
-    if (currentHour < 6) return "Goedenacht"
+    if (currentHour < 6) return "Hallo"
     if (currentHour < 12) return "Goedemorgen"
     if (currentHour < 18) return "Goedemiddag"
- 
-    return "Goedeavond"
+    return "Goedenavond"
 }
