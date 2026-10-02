@@ -5,7 +5,8 @@
     height: calc(100vh - var(--header-height));
     width: 100%;
     color: var(--fg);
-    padding: 200px
+    padding: 200px;
+    font-weight: 600;
 }
 
 .choice-button {
