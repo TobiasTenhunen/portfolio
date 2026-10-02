@@ -8,7 +8,7 @@ export default function Home() {
         <>
             <div className="hero">
                 <p className="greeting-message">{_getGreetingMessage()}, ik ben</p>
-                <Banner text="Tobias Tenhunen" verticalMargin="0.5em">
+                <Banner text="Tobias Tenhunen" verticalMargin="64px">
                     <p>Front-End Developer</p>
                 </Banner>
                 <Link to="/mijn-werk" className="view-work">Bekijk mijn werk</Link>
