@@ -1,8 +1,17 @@
 import "./Footer.css"
+import { BsGithub } from "react-icons/bs"
 
 export default function Footer() {
+    const mailUser = "mail"
+    const domain = "tobiastenhunen.com"
+    const mailAddress = `${mailUser}@${domain}`
+
     return (
         <footer id="footer">
+            <a href="https://github.com/tobiastenhunen"><BsGithub className="footer-logo"></BsGithub></a>
+            <div className="footer-contact-info">
+                <a href={`mailto:${mailAddress}`}>{mailAddress}</a>
+            </div>
         </footer>
     )
 }
